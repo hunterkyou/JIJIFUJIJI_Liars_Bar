@@ -4,9 +4,9 @@
 
 
 ############测试
-#tellraw @a [{"text":"c_table_playing ","color":"red"},{"selector":"@a[tag=c_table_playing]","color":"red"},\
-#{"text":"   c_table_last   ","color":"gold"},{"selector":"@a[tag=c_table_last]","color":"gold"},\
-#{"text":"   【【   这是5.0_random_player_turn_player前   】】","color":"green"}]
+#tellraw @a [{text:"c_table_playing ",color:"red"},{selector:"@a[tag=c_table_playing]",color:"red"},\
+#{text:"   c_table_last   ",color:"gold"},{selector:"@a[tag=c_table_last]",color:"gold"},\
+#{text:"   【【   这是5.0_random_player_turn_player前   】】",color:"green"}]
 ############测试
 
 

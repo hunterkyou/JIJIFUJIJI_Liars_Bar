@@ -10,9 +10,9 @@ execute if entity @a[team=liar_bar_a_table,tag=a_table_3] as @a[team=liar_bar_a_
 
 
 ############测试
-#tellraw @a [{"text":"a_table_playing ","color":"red"},{"selector":"@a[tag=a_table_playing]","color":"red"},\
-#{"text":"a_table_last   ","color":"gold"},{"selector":"@a[tag=a_table_last]","color":"gold"},\
-#{"text":"   【【这是2-player4后】】","color":"green"}]
+#tellraw @a [{text:"a_table_playing ",color:"red"},{selector:"@a[tag=a_table_playing]",color:"red"},\
+#{text:"a_table_last   ",color:"gold"},{selector:"@a[tag=a_table_last]",color:"gold"},\
+#{text:"   【【这是2-player4后】】",color:"green"}]
 
 ############测试
 

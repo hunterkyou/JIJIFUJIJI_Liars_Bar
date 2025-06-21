@@ -6,7 +6,7 @@ execute store result bossbar minecraft:jijifujiji_liar_bar_d_table_time value ru
 #42-time=temp  ，并录入
 
 
-bossbar set jijifujiji_liar_bar_d_table_time name [{"text":"已有","color":"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_d_table_number"},"color":"gold","bold":true},{"text":"人加入游戏，  ","color":"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_d_table_temp"},"color":"gold","bold":true},{"text":"s","color":"gold"}]
+bossbar set jijifujiji_liar_bar_d_table_time name [{text:"已有",color:"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_d_table_number"},color:"gold",bold:true},{text:"人加入游戏，  ",color:"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_d_table_temp"},color:"gold",bold:true},{text:"s",color:"gold"}]
 $bossbar set jijifujiji_liar_bar_d_table_time players @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18]
 #更新boss条初始状态   liar_bar_d_table_number为已加入游戏的人数
 

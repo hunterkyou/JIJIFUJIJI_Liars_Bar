@@ -6,7 +6,7 @@ scoreboard players set liar_bar_e_table_temp jijifujiji_liar_bar_variable 110
 #临时变量=110
 execute store result bossbar minecraft:jijifujiji_liar_bar_e_table_time value run scoreboard players operation liar_bar_e_table_temp jijifujiji_liar_bar_variable -= liar_bar_e_table_time jijifujiji_liar_bar_variable
 #45-time=temp  ，并录入
-bossbar set jijifujiji_liar_bar_e_table_time name [{"selector":"@a[team=liar_bar_e_table,tag=e_table__shoot]]","color":"gold","bold":true},{"text":"的开枪回合...","color":"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_e_table_temp"},"color":"gold","bold":true},{"text":"s","color":"gold"}]
+bossbar set jijifujiji_liar_bar_e_table_time name [{selector:"@a[team=liar_bar_e_table,tag=e_table__shoot]",color:"gold",bold:true},{text:"的开枪回合...",color:"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_e_table_temp"},color:"gold",bold:true},{text:"s",color:"gold"}]
 $bossbar set jijifujiji_liar_bar_e_table_time players @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18]
 #更新boss条初始状态   liar_bar_e_table_number为已加入游戏的人数
 

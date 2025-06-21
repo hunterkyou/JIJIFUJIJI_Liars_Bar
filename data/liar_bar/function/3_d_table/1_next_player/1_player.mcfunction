@@ -2,9 +2,9 @@
 
 
 ############测试
-#tellraw @a [{"text":"d_table_playing ","color":"red"},{"selector":"@a[tag=d_table_playing]","color":"red"},\
-#{"text":"d_table_last   ","color":"gold"},{"selector":"@a[tag=d_table_last]","color":"gold"},\
-#{"text":"   【【这是1-player前】】","color":"green"}]
+#tellraw @a [{text:"d_table_playing ",color:"red"},{selector:"@a[tag=d_table_playing]",color:"red"},\
+#{text:"d_table_last   ",color:"gold"},{selector:"@a[tag=d_table_last]",color:"gold"},\
+#{text:"   【【这是1-player前】】",color:"green"}]
 
 ############测试
 
@@ -28,7 +28,7 @@ execute if entity @s[team=liar_bar_d_table,tag=d_table_4] run return run functio
 
 
 ############测试
-#tellraw @a [{"text":"d_table_playing ","color":"red"},{"selector":"@a[tag=d_table_playing]","color":"red"},\
-#{"text":"d_table_last   ","color":"gold"},{"selector":"@a[tag=d_table_last]","color":"gold"},\
-#{"text":"   【【这是1-player后】】","color":"green"}]
+#tellraw @a [{text:"d_table_playing ",color:"red"},{selector:"@a[tag=d_table_playing]",color:"red"},\
+#{text:"d_table_last   ",color:"gold"},{selector:"@a[tag=d_table_last]",color:"gold"},\
+#{text:"   【【这是1-player后】】",color:"green"}]
 ############测试

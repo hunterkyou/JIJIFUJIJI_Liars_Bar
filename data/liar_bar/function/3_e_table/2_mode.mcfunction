@@ -9,10 +9,10 @@ execute if score @s jijifujiji_liar_bar_e_table_click matches 101 run data modif
 execute if score @s jijifujiji_liar_bar_e_table_click matches 102 run data modify storage minecraft:jijifujiji_liat_bar e_table_position.mode set value "饭团币"
 execute if score @s jijifujiji_liar_bar_e_table_click matches 103 run data modify storage minecraft:jijifujiji_liat_bar e_table_position.mode set value "坤坤币"
 #根据选择的模式来修改参数
-$tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{"text":"模式已被选定！","color":"yellow"}]
-$execute if score @s jijifujiji_liar_bar_e_table_click matches 101 run tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{"text":"点击","color":"yellow"},{"text":"【加入赌命模式】","color":"dark_red","bold":true,"clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_e_table_join set 100"},"hoverEvent":{"action":"show_text","value":"点我加入赌命模式对局"}},{"text":"骗子酒馆","color":"yellow"}]
-$execute if score @s jijifujiji_liar_bar_e_table_click matches 102 run tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{"text":"点击","color":"yellow"},{"text":"【加入赌饭团币】","color":"dark_red","bold":true,"clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_e_table_join set 100"},"hoverEvent":{"action":"show_text","value":"点我加入赌饭团币模式对局"}},{"text":"骗子酒馆","color":"yellow"}]
-$execute if score @s jijifujiji_liar_bar_e_table_click matches 103 run tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{"text":"点击","color":"yellow"},{"text":"【加入赌坤坤币】","color":"dark_red","bold":true,"clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_e_table_join set 100"},"hoverEvent":{"action":"show_text","value":"点我加入赌坤坤币模式对局"}},{"text":"骗子酒馆","color":"yellow"}]
+$tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{text:"模式已被选定！",color:"yellow"}]
+$execute if score @s jijifujiji_liar_bar_e_table_click matches 101 run tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{text:"点击",color:"yellow"},{text:"【加入赌命模式】",color:"dark_red",bold:true,click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_e_table_join set 100"},hover_event:{action:"show_text",value:"点我加入赌命模式对局"}},{text:"骗子酒馆",color:"yellow"}]
+$execute if score @s jijifujiji_liar_bar_e_table_click matches 102 run tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{text:"点击",color:"yellow"},{text:"【加入赌饭团币】",color:"dark_red",bold:true,click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_e_table_join set 100"},hover_event:{action:"show_text",value:"点我加入赌饭团币模式对局"}},{text:"骗子酒馆",color:"yellow"}]
+$execute if score @s jijifujiji_liar_bar_e_table_click matches 103 run tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{text:"点击",color:"yellow"},{text:"【加入赌坤坤币】",color:"dark_red",bold:true,click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_e_table_join set 100"},hover_event:{action:"show_text",value:"点我加入赌坤坤币模式对局"}},{text:"骗子酒馆",color:"yellow"}]
 #发送不同的对话
 scoreboard players reset @a jijifujiji_liar_bar_e_table_click
 #重置掉按了模式按钮玩家的按键计分板
@@ -31,7 +31,7 @@ scoreboard players set liar_bar_e_table_number jijifujiji_liar_bar_variable 0
 scoreboard players set liar_bar_e_table_temp jijifujiji_liar_bar_variable 20
 #临时变量=20
 bossbar set jijifujiji_liar_bar_e_table_time value 20
-bossbar set jijifujiji_liar_bar_e_table_time name [{"text":"已有0","color":"yellow"},{"text":"人加入游戏，  ","color":"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_e_table_temp"},"color":"gold","bold":true},{"text":"s","color":"gold"}]
+bossbar set jijifujiji_liar_bar_e_table_time name [{text:"已有0",color:"yellow"},{text:"人加入游戏，  ",color:"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_e_table_temp"},color:"gold",bold:true},{text:"s",color:"gold"}]
 #立刻更新进度条
 
 

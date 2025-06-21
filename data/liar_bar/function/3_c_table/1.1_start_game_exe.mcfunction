@@ -18,7 +18,7 @@ scoreboard players set c_table_mode jijifujiji_liar_bar_variable 1
 #先设置模式为模式1
 $execute if score gambling_mode jijifujiji_liar_bar_variable matches 1 run scoreboard players enable @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] jijifujiji_liar_bar_c_table_click
 #让范围内的玩家可以点按钮
-$execute if score gambling_mode jijifujiji_liar_bar_variable matches 1 as @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] run tellraw @s [{"text":"选择模式：","color":"yellow"},{"text":"【赌命模式】","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_c_table_click set 101"},"hoverEvent":{"action":"show_text","value":"仅仅赌命"}},{"text":"【赌饭团币】","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_c_table_click set 102"},"hoverEvent":{"action":"show_text","value":"除了赌命还会额外赌一个饭团币"}},{"text":"【赌坤坤币】","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_c_table_click set 103"},"hoverEvent":{"action":"show_text","value":"除了赌命还会额外赌一个坤坤币"}}]
+$execute if score gambling_mode jijifujiji_liar_bar_variable matches 1 as @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] run tellraw @s [{text:"选择模式：",color:"yellow"},{text:"【赌命模式】",color:"gold",bold:true,click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 101"},hover_event:{action:"show_text",value:"仅仅赌命"}},{text:"【赌饭团币】",color:"gold",bold:true,click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 102"},hover_event:{action:"show_text",value:"除了赌命还会额外赌一个饭团币"}},{text:"【赌坤坤币】",color:"gold",bold:true,click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 103"},hover_event:{action:"show_text",value:"除了赌命还会额外赌一个坤坤币"}}]
 #对范围内的玩家显示选择选项
 bossbar remove minecraft:jijifujiji_liar_bar_c_table_time
 bossbar remove minecraft:liar_bar_c_table_time_player1
@@ -43,7 +43,7 @@ tag @a[team=liar_bar_c_table] remove c_table_after_gun
 tag @e[type=minecraft:item_display,tag=liar_bar_c_table_card] remove c_table_card_select
 tag @e[type=minecraft:item_display,tag=liar_bar_c_table_card] remove c_table_card_on_center
 #删除标签
-bossbar add jijifujiji_liar_bar_c_table_time [{"text":"请选择模式","color":"yellow"}]
+bossbar add jijifujiji_liar_bar_c_table_time [{text:"请选择模式",color:"yellow"}]
 bossbar set jijifujiji_liar_bar_c_table_time color yellow
 bossbar set jijifujiji_liar_bar_c_table_time max 20
 bossbar set jijifujiji_liar_bar_c_table_time value 20

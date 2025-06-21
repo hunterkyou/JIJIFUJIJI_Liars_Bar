@@ -33,7 +33,7 @@ execute if score e_table_mode jijifujiji_liar_bar_variable matches 1..3 run func
 #execute as @a if score @s gamble_ticket matches 1.. at @s if items entity @s weapon.mainhand experience_bottle run function gamble:gamble_ticket/ticket
 
 #execute as @a if score @s gamble_ticket matches 1.. at @s if items entity @s weapon.mainhand experience_bottle[minecraft:enchantments={levels:{unbreaking:1}}] run function gamble:gamble_ticket/ticket
-#execute as @a if score @s gamble_ticket matches 1.. at @s if data entity @s {SelectedItem:{tag:{display:{Lore:['{"text":"\\u00A7e为社会造福 为生活添彩"}']}}}} run function gamble:gamble_ticket/ticket
+#execute as @a if score @s gamble_ticket matches 1.. at @s if data entity @s {SelectedItem:{tag:{display:{Lore:[{text:"\u00A7e为社会造福 为生活添彩"}]}}}} run function gamble:gamble_ticket/ticket
 #使用彩票
 #execute as @a if score @s gamble_ticket matches 1.. at @s run scoreboard players set @s gamble_ticket 0
 #使用彩票归零

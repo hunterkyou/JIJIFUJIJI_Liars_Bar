@@ -31,7 +31,7 @@ $execute as @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18,scores={jijifujiji_liar_
 #trigger jijifujiji_liar_bar_d_table_click set 100
 
 
-#$execute as @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] run tellraw @s [{"text":"选择模式：","color":"yellow"},{"text":"【赌命模式】","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_d_table_click set 101"},"hoverEvent":{"action":"show_text","value":"仅仅赌命"}},{"text":"【赌饭团币】","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_d_table_click set 102"},"hoverEvent":{"action":"show_text","value":"除了赌命还会额外赌一个饭团币"}},{"text":"【赌坤坤币】","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_d_table_click set 103"},"hoverEvent":{"action":"show_text","value":"除了赌命还会额外赌一个坤坤币"}}]
+#$execute as @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] run tellraw @s [{text:"选择模式：",color:"yellow"},{text:"【赌命模式】",color:"gold",bold:true,click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_d_table_click set 101"},hover_event:{action:"show_text",value:"仅仅赌命"}},{text:"【赌饭团币】",color:"gold",bold:true,click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_d_table_click set 102"},hover_event:{action:"show_text",value:"除了赌命还会额外赌一个饭团币"}},{text:"【赌坤坤币】",color:"gold",bold:true,click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_d_table_click set 103"},hover_event:{action:"show_text",value:"除了赌命还会额外赌一个坤坤币"}}]
 #解放区域的点击功能
 
 

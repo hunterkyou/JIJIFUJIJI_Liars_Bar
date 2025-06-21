@@ -31,7 +31,7 @@ $execute positioned $(x) $(y) $(z) run setblock ~1 ~ ~ minecraft:oak_stairs[faci
 #三号面前
 $execute positioned $(x) $(y) $(z) run setblock ~1 ~ ~-1 minecraft:oak_stairs[facing=south,half=top,shape=outer_right,waterlogged=false]
 
-tellraw @s [{"text":"结构生成完毕！","color":"yellow"}]
+tellraw @s [{text:"结构生成完毕！",color:"yellow"}]
 
 function liar_bar:0_op
 

@@ -7,11 +7,11 @@ execute at @s anchored eyes run particle crit ^-0.2 ^ ^0.5 0.1 0.1 0.1 0 20 norm
 #扣动扳机粒子效果
 execute at @s run particle block{block_state: {Name: "minecraft:redstone_block"}} ~ ~1 ~ 0.1 0.5 0.1 0.4 50 force
 #死亡粒子效果
-$tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{"selector":"@s","color":"gold","bold":true},{"text":"的脑袋被开了瓢。","color":"dark_red"}]
+$tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{selector:"@s",color:"gold",bold:true},{text:"的脑袋被开了瓢。",color:"dark_red"}]
 #聊天框提示
 scoreboard players reset @s jijifujiji_liar_bar_bullet
 #重置子弹数量
-clear @s carrot_on_a_stick[custom_name='[{"text":"左轮枪","italic":false,"bold":true,"color":"yellow"}]',custom_model_data=9999456,custom_data={liar_bar:1}]
+clear @s carrot_on_a_stick[custom_name=[{text:"左轮枪",italic:false,bold:true,color:"yellow"}],custom_model_data={floats:[9999456]},custom_data={liar_bar:1}]
 #删除身上的枪
 execute if entity @s[tag=b_table_1,team=liar_bar_b_table] run bossbar remove minecraft:liar_bar_b_table_time_player1
 execute if entity @s[tag=b_table_2,team=liar_bar_b_table] run bossbar remove minecraft:liar_bar_b_table_time_player2

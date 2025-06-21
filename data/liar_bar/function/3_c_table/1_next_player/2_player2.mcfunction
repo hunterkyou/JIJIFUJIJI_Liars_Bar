@@ -10,9 +10,9 @@ execute if entity @a[team=liar_bar_c_table,tag=c_table_4] as @a[team=liar_bar_c_
 execute if entity @a[team=liar_bar_c_table,tag=c_table_1] as @a[team=liar_bar_c_table,tag=c_table_1] if score @s jijifujiji_liar_bar_variable matches 1.. run return run tag @s add c_table_playing
 
 ############测试
-#tellraw @a [{"text":"c_table_playing ","color":"red"},{"selector":"@a[tag=c_table_playing]","color":"red"},\
-#{"text":"c_table_last   ","color":"gold"},{"selector":"@a[tag=c_table_last]","color":"gold"},\
-#{"text":"   【【这是2-player2后】】","color":"green"}]
+#tellraw @a [{text:"c_table_playing ",color:"red"},{selector:"@a[tag=c_table_playing]",color:"red"},\
+#{text:"c_table_last   ",color:"gold"},{selector:"@a[tag=c_table_last]",color:"gold"},\
+#{text:"   【【这是2-player2后】】",color:"green"}]
 
 ############测试
 

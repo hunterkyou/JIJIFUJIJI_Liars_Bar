@@ -6,7 +6,7 @@
 execute if score liar_bar_d_table_number jijifujiji_liar_bar_variable matches 0..3 run scoreboard players add liar_bar_d_table_number jijifujiji_liar_bar_variable 1
 #加入玩家数目+1
 
-$tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{"selector":"@s","color":"dark_green","bold":true},{"text":"加入对局！","color":"green","bold":true}]
+$tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{selector:"@s",color:"dark_green",bold:true},{text:"加入对局！",color:"green",bold:true}]
 #显示语句
 team join liar_bar_d_table @s
 #给玩家加入队伍

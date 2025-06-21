@@ -13,8 +13,8 @@ tag @a[team=liar_bar_b_table] remove b_table_last
 tag @a[team=liar_bar_b_table] remove b_table__shoot
 tag @a[team=liar_bar_b_table] remove b_table_after_gun
 #清除一些标记
-title @a[team=liar_bar_b_table,tag=b_table_playing] title [{"text":">>>你的回合<<<","color":"green","bold":true}]
-tellraw @a[team=liar_bar_b_table,tag=b_table_playing] [{"text":"####请选择要出的手牌：","color":"yellow"}]
+title @a[team=liar_bar_b_table,tag=b_table_playing] title [{text:">>>你的回合<<<",color:"green",bold:true}]
+tellraw @a[team=liar_bar_b_table,tag=b_table_playing] [{text:"####请选择要出的手牌：",color:"yellow"}]
 #显示聊天
 scoreboard objectives setdisplay below_name jijifujiji_liar_bar_bullet
 #在名字上显示剩余子弹
@@ -22,15 +22,15 @@ execute as @a[team=liar_bar_b_table,tag=b_table_playing] at @s run playsound blo
 #提示回合音效
 bossbar set jijifujiji_liar_bar_b_table_time max 30
 bossbar set jijifujiji_liar_bar_b_table_time value 30
-bossbar set jijifujiji_liar_bar_b_table_time name [{"selector":"@a[team=liar_bar_b_table,tag=b_table_playing]]","color":"gold","bold":true},{"text":"的回合...","color":"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_b_table_temp"},"color":"gold","bold":true},{"text":"s","color":"gold"}]
+bossbar set jijifujiji_liar_bar_b_table_time name [{selector:"@a[team=liar_bar_b_table,tag=b_table_playing]",color:"gold",bold:true},{text:"的回合...",color:"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_b_table_temp"},color:"gold",bold:true},{text:"s",color:"gold"}]
 #立刻更新进度条#新的boss条
 scoreboard players enable @a[team=liar_bar_b_table,tag=b_table_playing] jijifujiji_liar_bar_b_table_click
 #让玩家可以点按钮
-data modify storage minecraft:jijifujiji_liat_bar b_table_position.select1 set value '✘]","color":"red","clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_b_table_click set 1'
-data modify storage minecraft:jijifujiji_liat_bar b_table_position.select2 set value '✘]","color":"red","clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_b_table_click set 2'
-data modify storage minecraft:jijifujiji_liat_bar b_table_position.select3 set value '✘]","color":"red","clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_b_table_click set 3'
-data modify storage minecraft:jijifujiji_liat_bar b_table_position.select4 set value '✘]","color":"red","clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_b_table_click set 4'
-data modify storage minecraft:jijifujiji_liat_bar b_table_position.select5 set value '✘]  ","color":"red","clickEvent":{"action":"run_command","value":"/trigger jijifujiji_liar_bar_b_table_click set 5'
+data modify storage minecraft:jijifujiji_liat_bar b_table_position.select1 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_b_table_click set 1'
+data modify storage minecraft:jijifujiji_liat_bar b_table_position.select2 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_b_table_click set 2'
+data modify storage minecraft:jijifujiji_liat_bar b_table_position.select3 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_b_table_click set 3'
+data modify storage minecraft:jijifujiji_liat_bar b_table_position.select4 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_b_table_click set 4'
+data modify storage minecraft:jijifujiji_liat_bar b_table_position.select5 set value '✘]  ",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_b_table_click set 5'
 #设置传参数据为红色XX触发1-5
 execute if entity @a[team=liar_bar_b_table,tag=b_table_1,tag=b_table_playing] run data modify storage minecraft:jijifujiji_liat_bar b_table_position.player_turn set value 1
 execute if entity @a[team=liar_bar_b_table,tag=b_table_2,tag=b_table_playing] run data modify storage minecraft:jijifujiji_liat_bar b_table_position.player_turn set value 2
@@ -45,7 +45,7 @@ scoreboard players enable @a[team=liar_bar_b_table,tag=b_table_playing] jijifuji
 #让玩家可以点按钮
 
 ############测试
-#tellraw @a [{"text":"b_table_playing ","color":"red"},{"selector":"@a[tag=b_table_playing]","color":"red"},\
-#{"text":"b_table_last   ","color":"gold"},{"selector":"@a[tag=b_table_last]","color":"gold"},\
-#{"text":"   【【这是5_random_player_turn后】】","color":"green"}]
+#tellraw @a [{text:"b_table_playing ",color:"red"},{selector:"@a[tag=b_table_playing]",color:"red"},\
+#{text:"b_table_last   ",color:"gold"},{selector:"@a[tag=b_table_last]",color:"gold"},\
+#{text:"   【【这是5_random_player_turn后】】",color:"green"}]
 ############测试

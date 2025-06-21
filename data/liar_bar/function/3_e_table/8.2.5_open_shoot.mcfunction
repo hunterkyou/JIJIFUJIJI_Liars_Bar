@@ -7,7 +7,7 @@
 #先创造一个物品
 #item replace entity @n[tag=jijifujiji_liar_bar_temp_gun,type=minecraft:item] container.0 from entity @s weapon.mainhand
 #把玩家主手的物品换成这个物品
-#item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_name='[{"text":"左轮枪","italic":false,"bold":true,"color":"yellow"}]',custom_model_data=9999456,custom_data={liar_bar:1}] 1
+#item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_name=[{text:"左轮枪",italic:false,bold:true,color:"yellow"}],custom_model_data={floats:[9999456]},custom_data={liar_bar:1}] 1
 #让玩家举枪
 
 

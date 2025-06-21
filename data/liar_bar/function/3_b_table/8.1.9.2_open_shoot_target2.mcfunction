@@ -9,8 +9,8 @@ item replace entity @n[tag=jijifujiji_liar_bar_temp_gun,type=minecraft:item] con
 
 tag @n[tag=jijifujiji_liar_bar_temp_gun,type=minecraft:item] remove jijifujiji_liar_bar_temp_gun
 #删除这个物品的标签
-item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_name='[{"text":"左轮枪","italic":false,"bold":true,"color":"yellow"}]',custom_model_data=9999456,custom_data={liar_bar:1}] 1
+item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_name=[{text:"左轮枪",italic:false,bold:true,color:"yellow"}],custom_model_data={floats:[9999456]},custom_data={liar_bar:1}] 1
 #让玩家举枪发枪
 
-title @s title [{"text":">>>你举起了枪<<<","color":"red","bold":true}]
+title @s title [{text:">>>你举起了枪<<<",color:"red",bold:true}]
 #字幕显示

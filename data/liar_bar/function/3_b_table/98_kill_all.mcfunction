@@ -5,7 +5,7 @@
 scoreboard players set b_table_mode jijifujiji_liar_bar_variable 0
 #设置结束游戏
 
-$tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{"text":"本局活动结束辣！","color":"yellow"}]
+$tellraw @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18] [{text:"本局活动结束辣！",color:"yellow"}]
 #游戏被结束辣
 
 

@@ -5,7 +5,7 @@ execute store result bossbar minecraft:jijifujiji_liar_bar_b_table_time value ru
 #20-time=temp  ，并录入
 
 
-bossbar set jijifujiji_liar_bar_b_table_time name [{"text":"请选择模式（任意玩家）    ","color":"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_b_table_temp"},"color":"gold","bold":true},{"text":"s","color":"gold"}]
+bossbar set jijifujiji_liar_bar_b_table_time name [{text:"请选择模式（任意玩家）    ",color:"yellow"},{"score":{"objective":"jijifujiji_liar_bar_variable","name":"liar_bar_b_table_temp"},color:"gold",bold:true},{text:"s",color:"gold"}]
 $bossbar set jijifujiji_liar_bar_b_table_time players @a[x=$(x1),y=$(y1),z=$(z1),dx=18,dy=6,dz=18]
 #更新boss条初始状态
 
